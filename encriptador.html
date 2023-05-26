@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+
+<html leng="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="encritadorStyle.css">
+
+        <h1>Encriptador De Texto</h1>
+           
+    </head>
+
+        <body>
+          <header>
+              <div class="areaPrincipal">
+
+              </div> 
+          </header> 
+          
+          <main>
+              <div class="encriptador">
+
+                 <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingresar El Texto Aqui"> </textarea>
+
+              
+                   <div class="condicion">
+                       <p>No Ingresar Mayusculas Ni Cartateres </p>
+                  </div>
+
+                      <div class="botones">
+                           <input class="botonEncrip" type="button" value="Encritar" onclick="encriptar()">
+
+                           <input class="botonDesencrip" type="button" value="Desencriptar" onclick="desencriptar()">    
+                      </div>
+                          
+                          <div class="encritado">
+                               <img src="" alt="" id="imagen">
+
+                               <div class="msjEncrptado" id="msjEncrptado">
+                                    <h2 id="tituloMensaje">Nigun Texto Encontrado</h2>
+                                    <p id="textoEncrip">Ingrese Txto Que Deseas Encriptar O Desencritar</p>
+                                    <textarea class="msj" name="msj" id="msj" cols="30" rows="10"></textarea> 
+
+                               </div>
+
+
+                          </div>
+                           
+                </div>           
+
+
+            </main>
+        </body>
+
+    
+
+</html>
+
+
+
+<script>
+
+   // tem = prompt("ingrese frace")
+    divide = tem.split("");
+
+    for (i=0; i<divide.length; i++){
+        if(divide[i]=="a")
+        {
+            divide[i]="ai"
+        }
+        if(divide[i]=="e")
+        {
+            divide[i]="enter"
+        }
+        if(divide[i]=="i")
+        {
+            divide[i]="imes"
+        }
+        if(divide[i]=="o")
+        {
+            divide[i]="ober"
+        }
+        if(divide[i]=="u")
+        {
+            divide[i]="ufat"
+        }
+
+        document.write(divide[i]);
+
+    }
+    document.write("<br>");
+    
+    for (i=0; i<divide.length; i++){
+     if(divide[i]=="ai")
+     {
+         divide[i]="a"
+     }
+     if(divide[i]=="enter")
+     {
+         divide[i]="e"
+     }
+     if(divide[i]=="imes")
+     {
+         divide[i]="i"
+     }
+     if(divide[i]=="ober")
+     {
+         divide[i]="o"
+     }
+     if(divide[i]=="ufat")
+     {
+         divide[i]="u"
+     }
+     document.write(divide[i]);
+ }
+</script>
